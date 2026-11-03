@@ -1,0 +1,685 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VegShop | Fresh Vegetables Online</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between">
+            <span>🌿 Fresh • Healthy • Organic</span>
+            <span>🚚 Free delivery on orders above ₹499</span>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand brand-logo" href="#">
+                <span class="brand-icon">🌿</span> VegShop
+                <small>Fresh Vegetables, Healthy Life</small>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <form class="search-box d-flex" role="search"
+                      action="#products">
+                    <input class="form-control"
+                           type="search"
+                           placeholder="Search vegetables..."
+                           aria-label="Search vegetables">
+                    <button class="search-btn" type="submit"
+                            aria-label="Search">⌕</button>
+                </form>
+
+                <a href="#products" class="cart-link ms-lg-3">
+                    🛒 <span>Cart</span>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 hero-content">
+                    <span class="hero-label">
+                        100% FRESH & NATURAL
+                    </span>
+
+                    <h1>
+                        Farm Fresh Vegetables
+                        <span>Delivered to Your Door</span>
+                    </h1>
+
+                    <p>
+                        Bring home the goodness of nature with fresh,
+                        handpicked vegetables sourced for your everyday meals.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn shop-btn">
+                            Shop Now <span>→</span>
+                        </a>
+                        <a href="#categories" class="explore-link">
+                            Explore Categories
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <span>✓ Freshly Picked</span>
+                        <span>✓ Quality Produce</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hero-image">
+                    <img src="/Bootstrap/VegShop/images/banners/hero-vegetables.jpg"
+                         alt="Fresh vegetables in a basket"
+                         class="img-fluid">
+                    <div class="organic-badge">
+                        <strong>100%</strong>
+                        <span>FRESH</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- ===== SHOP BY CATEGORY ===== -->
+<section class="category-section py-5" id="categories">
+    <div class="container">
+
+        <div class="section-heading d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <span class="section-label">EXPLORE OUR STORE</span>
+                <h2>Shop by Category</h2>
+                <p>Everything fresh, all in one place.</p>
+            </div>
+
+            <a href="#products" class="view-all">View All Products →</a>
+        </div>
+
+        <div class="row g-3">
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#products" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh leafy greens">
+                    <h5>Leafy Greens</h5>
+                    <span>Fresh & nutritious</span>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#products" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh red tomatoes">
+                    <h5>Tomatoes</h5>
+                    <span>Juicy & delicious</span>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#products" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1445282768818-728615cc910a?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh root vegetables">
+                    <h5>Root Vegetables</h5>
+                    <span>Farm fresh picks</span>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#products" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh eggplants">
+                    <h5>Brinjal</h5>
+                    <span>Fresh everyday</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== FRESH VEGETABLE PRODUCTS ===== -->
+<section class="products-section py-5" id="products">
+    <div class="container">
+
+        <div class="section-heading d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <span class="section-label">HANDPICKED FOR YOU</span>
+                <h2>Fresh Vegetables</h2>
+                <p>Freshness you can see, quality you can trust.</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card">
+                    <a href="product.html">
+                    <div class="product-image">
+                        <span class="discount-badge">20% OFF</span>
+                        <img src="./images/products/photo-tomatoes.avif"
+                             alt="Fresh tomatoes">
+                             </a>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Fresh Produce</span>
+                        <a href="product.html"><h5>Fresh Tomatoes</h5></a>
+                        <div class="product-rating">★ ★ ★ ★ ☆ <small>(120)</small></div>
+
+                        <div class="product-price">
+                            <strong>₹40</strong>
+                            <del>₹50</del>
+                            <span>/ 500g</span>
+                        </div>
+
+                        <a href="product.html" class="add-cart-btn">
+                            View Product / Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <a href="product.html">
+                    <div class="product-image">
+                        <span class="discount-badge">15% OFF</span>
+                        <img src="./images/products/photo-carrot.avif"
+                             alt="Fresh carrots">
+                             </a>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Root Vegetables</span>
+                       <a href="product.html"><h5>Fresh Carrots</h5></a>
+                        <div class="product-rating">★ ★ ★ ★ ☆ <small>(98)</small></div>
+
+                        <div class="product-price">
+                            <strong>₹30</strong>
+                            <del>₹35</del>
+                            <span>/ 500g</span>
+                        </div>
+
+                        <a href="product.html" class="add-cart-btn">
+                            View Product / Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <a href="product.html">
+                    <div class="product-image">
+                        <span class="discount-badge">10% OFF</span>
+                        <img src="./images/products/photo-broccoli.avif"
+                             alt="Fresh broccoli">
+                             </a>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Green Vegetables</span>
+                        <a href="product.html"><h5>Fresh Broccoli</h5></a>
+                        <div class="product-rating">★ ★ ★ ★ ☆ <small>(76)</small></div>
+
+                        <div class="product-price">
+                            <strong>₹80</strong>
+                            <del>₹90</del>
+                            <span>/ piece</span>
+                        </div>
+
+                        <a href="product.html" class="add-cart-btn">
+                            View Product / Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <a href="product.html">
+                    <div class="product-image">
+                        <span class="discount-badge">12% OFF</span>
+                        <img src="./images/products/photo-capsicum.avif"
+                             alt="Fresh bell peppers">
+                             </a>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Fresh Produce</span>
+                        <a href="product.html"><h5>Capsicum</h5></a>
+                        <div class="product-rating">★ ★ ★ ★ ☆ <small>(64)</small></div>
+
+                        <div class="product-price">
+                            <strong>₹70</strong>
+                            <del>₹80</del>
+                            <span>/ 500g</span>
+                        </div>
+
+                        <a href="product.html" class="add-cart-btn">
+                            View Product / Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#products" class="all-products-btn">
+                Explore All Vegetables →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- OFFERS SECTION -->
+<section id="offers" class="offers-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-subtitle">SPECIAL DEALS</span>
+      <h2 class="section-title">Fresh Offers for You</h2>
+      <p class="text-muted">
+        Enjoy fresh vegetables at prices you'll love.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Offer 1 -->
+      <div class="col-md-6">
+        <div class="offer-card offer-green h-100">
+          <div class="offer-content">
+            <span class="offer-tag">SAVE MORE</span>
+            <h3>20% OFF</h3>
+            <p>On your first vegetable order.</p>
+            <p class="offer-code">
+              Use code: <strong>FRESH20</strong>
+            </p>
+            <a href="#products" class="offer-btn">
+              Shop Now →
+            </a>
+          </div>
+          <div class="offer-emoji" aria-hidden="true">🥦</div>
+        </div>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="col-md-6">
+        <div class="offer-card offer-yellow h-100">
+          <div class="offer-content">
+            <span class="offer-tag">WEEKLY DEAL</span>
+            <h3>Fresh & Healthy</h3>
+            <p>Discover our seasonal vegetable picks.</p>
+            <p class="offer-code">
+              Great choices, great value!
+            </p>
+            <a href="#categories" class="offer-btn">
+              Explore Now →
+            </a>
+          </div>
+          <div class="offer-emoji" aria-hidden="true">🥕</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT US SECTION -->
+<section id="about" class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- About Image -->
+      <div class="col-lg-6">
+        <div class="about-image-wrapper">
+          <img
+            src="images/banners/hero-vegetables.jpg"
+            alt="Fresh vegetables selected for VegShop customers"
+            class="img-fluid about-image"
+          >
+          <div class="about-badge">
+            <span>100%</span>
+            <small>Freshness Focused</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div class="col-lg-6">
+        <span class="section-subtitle">ABOUT VEGSHOP</span>
+
+        <h2 class="section-title">
+          Fresh Food, Better Living
+        </h2>
+
+        <p class="about-description">
+          At VegShop, we believe that fresh vegetables are an
+          important part of a healthy lifestyle. Our goal is to
+          make everyday vegetable shopping simple, convenient,
+          and enjoyable.
+        </p>
+
+        <p class="about-description">
+          Explore a variety of vegetables for your daily meals,
+          discover seasonal favourites, and enjoy a smooth
+          online shopping experience — all in one place.
+        </p>
+
+        <div class="row g-3 about-features">
+          <div class="col-sm-6">
+            <div class="about-feature">
+              <span>🌿</span>
+              <div>
+                <h6>Fresh Selection</h6>
+                <p>Vegetables for everyday cooking</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="about-feature">
+              <span>🛒</span>
+              <div>
+                <h6>Easy Shopping</h6>
+                <p>Simple and convenient browsing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#products" class="about-btn">
+          Explore Products →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="section-subtitle">CONTACT US</span>
+            <h2 class="section-title">We're Here to Help</h2>
+            <p class="text-muted">
+                Have questions? We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- Contact Information -->
+            <div class="col-lg-5">
+
+                <div class="contact-card h-100">
+
+                    <h3>Get in Touch</h3>
+
+                    <p>
+                        Reach out anytime for product inquiries,
+                        delivery information, or customer support.
+                    </p>
+
+                    <div class="contact-info">
+
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h6>Phone</h6>
+                                <span>+91 98765 43210</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div>
+                                <h6>Email</h6>
+                                <span>support@vegshop.com</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h6>Location</h6>
+                                <span>Coimbatore, Tamil Nadu</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-note">
+                        🌿 Fresh vegetables, better living.
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+
+                <div class="contact-form-card h-100">
+
+                    <form>
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Your name"
+                                       required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel"
+                                       class="form-control"
+                                       placeholder="+91 9876543210">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Email Address</label>
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="you@example.com"
+                                       required>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Subject</label>
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="How can we help?">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control"
+                                          rows="5"
+                                          placeholder="Write your message..."></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit"
+                                        class="contact-btn">
+                                    Send Message →
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="vegshop-footer">
+  <div class="container">
+    <div class="row g-4 py-5">
+
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <a href="#" class="footer-logo">
+          VegShop<span>.</span>
+        </a>
+
+        <p class="footer-description">
+          Fresh vegetables, better choices, healthier living.
+          Discover your everyday favourites with VegShop.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/"
+             aria-label="Instagram">IG</a>
+          <a href="https://www.facebook.com/"
+             aria-label="Facebook">FB</a>
+          <a href="https://www.youtube.com/"
+             aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#offers">Special Offers</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Support -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Customer Support</h5>
+        <ul class="footer-links">
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contact">Delivery Information</a></li>
+          <li><a href="#contact">Return Policy</a></li>
+          <li><a href="#contact">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Stay Fresh!</h5>
+        <p class="footer-description">
+          Get updates about fresh arrivals and special offers.
+        </p>
+
+        <form class="footer-newsletter"
+              action="#"
+              method="get">
+          <label for="newsletter-email"
+                 class="visually-hidden">
+            Email address
+          </label>
+
+          <input
+            type="email"
+            id="newsletter-email"
+            placeholder="Enter your email"
+            required
+          >
+
+          <button type="submit" aria-label="Subscribe">
+            →
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 VegShop. All rights reserved.</p>
+      <p>Made with care for fresh living 🌿</p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

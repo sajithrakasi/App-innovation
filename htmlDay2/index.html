@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task1:Nested lists with categories</h1>
+    <ul>
+        <li>fiction
+            <ul>
+                <li>fantasy</li>
+                <ol>
+                    <li>high fantasy</li>
+                    <li>urban fantasy</li>
+                </ol>
+                <li>humour</li>
+                <ol>
+                    <li>satire</li>
+                    <li>parody</li>
+                </ol>
+            </ul>
+        </li>
+        <li>non-fiction
+            <ul>
+                <li>biography</li>
+                <ol>
+                    <li>memoir</li>
+                    <li>autobiography</li>
+                </ol>
+                <li>history</li>
+                <ol>
+                    <li>ancient history</li>
+                    <li>modern history</li>
+                </ol>
+            </ul>
+        </li>
+    </ul>
+    <h1>Task2: Description Lists</h1>
+    <dl>
+        <dt style="font-weight: bold;">what is description lists?</dt>
+        <dd style="font-style: italic;">A description list is a list of terms and their corresponding descriptions.</dd>
+        <br>
+        <dt style="font-weight: bold;">what is the difference between ordered and unordered lists?</dt>
+        <dd style="font-style: italic;">An ordered list is a list of items that are arranged in a specific order, while an unordered list is a list of items that are not arranged in any particular order.</dd>
+        <br>
+        <dt style="font-weight: bold;">what are the basic tags in html</dt>
+        <dd style="font-style: italic;">The basic tags in HTML include html, head, title, body, h1 to h6, p, a, img, ul, ol, li, dl, dt, and dd.</dd>
+        <br>
+        <dt style="font-weight: bold;">what is css?</dt>
+        <dd style="font-style: italic;">CSS stands for Cascading Style Sheets and is used to style and layout web pages.</dd>
+        <br>
+        <dt style="font-weight: bold;">what is form in html?</dt>
+        <dd style="font-style: italic;">A form in HTML is a section of a page that contains controls such as text fields, checkboxes, and buttons that allow users to input data.</dd>
+    </dl>
+    <h1>Task3: Image List Gallery favorite destinations</h1>
+    <ol>
+        <li>
+            <dl>
+                <dt>Beach</dt>
+                <dd>A serene coastal area with sand and water.</dd>
+            </dl>
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach" width="300">
+
+
+        </li>
+        <li>
+            <dl>
+                <dt>Mountains</dt>
+                <dd>High elevation landforms with steep slopes.</dd>
+            </dl>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Mountains" width="300">
+        </li>
+        <li>
+            <dl>
+                <dt>City</dt>
+                <dd>A large human settlement with significant infrastructure.</dd>
+            </dl>
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="City" width="300">
+        </li>
+    </ol>
+    <h1>Task4: Nested list in ordered list</h1>
+    <ol>
+        <li>prepare ingredients
+            <ul>
+                <li>chop vegetables</li>
+                <ul>
+                    <li>onions</li>
+                    <li>tomatoes</li>
+                    <li>peppers</li>
+                </ul>
+            </ul>
+        </li>
+
+        <li>measure ingredients</li>
+            <ul>
+                <li>Name of ingredients</li>
+                <ul>
+                    <li>spices</li>
+                    <li>oil</li>
+                    <li>salt</li>
+                </ul>
+            </ul>
+        </li>
+    </ol>
+    <h1>Task5: Restaurant Menu table Starters,Main Courses ,Desserts with images</h1>
+    <table border="1">
+        <tr>
+            <th>Starters</th>
+            <th>Main Courses</th>
+            <th>Desserts</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://www.eatwell101.com/wp-content/uploads/2022/10/tomato-basil-bruschetta-recipe.jpg" alt="Starters" width="200" height="300">
+                <p>Bruschetta</p>
+            </td>
+            <td>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.DDQsjF5rydT_R1POtKlmGwHaLH?r=0&pid=Api&h=220&P=0" alt="Main Courses" width="200" height="300">
+                <p>Grilled Salmon</p>
+            </td>
+            <td>
+                <img src="https://beyondfrosting.com/wp-content/uploads/2019/01/Easy-Chocolate-Cake-Recipe-008.jpg" alt="Desserts" width="200" height="300">
+                <p>Chocolate Cake</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://downshiftology.com/wp-content/uploads/2019/07/Caprese-Salad-4.jpg" alt="Starters" width="200" height="300">
+                <p>Caprese Salad</p>
+            </td>
+            <td>
+                <img src="https://www.number-2-pencil.com/wp-content/uploads/2018/07/Skinny-Chicken-Fettucine-Alfredo-Recipe-3.jpg" alt="Main Courses" width="200" height="300">
+                <p>Chicken Alfredo</p>
+            </td>
+            <td>
+                <img src="https://tatyanaseverydayfood.com/wp-content/uploads/2023/05/The-Best-Classic-Cheesecake-Recipe-1.jpg" alt="Desserts" width="200" height="300">
+                <p>Cheesecake</p>
+            </td>
+        </tr>
+    </table>
+        <h1>Task6(i): Multi section admission form</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="gender" name="gender" value="male">
+                <label for="gender">Male</label>
+                <input type="radio" id="gender" name="gender" value="female">
+                <label for="gender">Female</label>
+                <input type="radio" id="gender" name="gender" value="other">
+                <label for="gender">Other</label><br><br>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Academic Details</legend>
+                <label for="Previous School">Previous School:</label>
+                <input type="text" id="previous_school" name="previous_school" required><br><br>
+                <label for="Marks">Marks:</label>
+                <input type="number" id="marks" name="marks" min="0" max="600" required><br><br>
+                <label for="Course Selection">Course Selection:</label>
+                <input type="number" id="course_selection" name="course_selection" min="0" max="600" required><br><br>
+                <label for="file Upload">photo or id proof:</label>
+                <input type="file" id="file" name="file" accept="image/*"><br><br>
+            </fieldset>
+
+
+            <input type="submit" value="Submit">
+            </form>
+            <h1>Task6(ii): Job Application Form</h1>
+            <form>
+                <fieldset>
+                    <legend>Application Form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"><br><br>
+                    <label for ="linkedin">LinkedIn Profile:</label>
+                    <input type="url" id="linkedin" name="linkedin"><br><br>
+                    <label for="resume">Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+                    <label for="skills">Skills:</label>
+                    <input type="checkbox" id="skills" name="skills" required><br><br>
+                    <label for="Expected Salary">Expected Salary:</label>
+                    <input type="number" id="Expected Salary" name="Expected Salary" min="0" required><br><br>
+                </fieldset>
+            </form>
+            <h1>Task6(iii): Newsletter Signup with Email Validation</h1>
+            <form>
+                <fieldset>
+                    <legend>Newsletter Signup</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" name="email" required><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </fieldset>
+                </form>
+
+
+                <h1>Task7: create trip webpage with reference images touriest place of ooty , kerala , goa</h1>
+
+
+                <header>
+                   <h1 class="logo"><img src="/assets/Lets Trip Travel Logo.png"alt="Lets Trip Logo"></h1>
+
+
+                   <p style="text-align: center; font-size: 30px; font-weight: bold;">Explore the world with us!</p>
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main style="text-align: center; font-size: 30px;">
+                    <section>
+                        <h2>Welcome to lets trip</h2>
+                        <p>Travel the world with us and create unforgettable memories.</p>
+
+
+                       <div class="trip-container">
+
+
+                    <!-- Card 1 -->
+                    <div class="trip-card">
+                        <div class="slider">
+                        <img src="/assets/goa-beach-pictures-nky6f6agn0qeb4h8.jpg" alt="Goa beach">
+                        <img src="/assets/india-goa-beach-sunset-40768228.webp" alt="Goa sunset">
+                        <img src="/assets/200805261514037199-ceeeb871-40cd-419b-b195-c169dcc20909.avif" alt="Goa resort">
+                        </div>
+                        <h3>Goa</h3>
+                        <p>Enjoy beautiful beaches.</p>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="trip-card">
+                        <div class="slider">
+                        <img src="/assets/267826059_5446430912053552_6218415571922955100_n-edited-1.webp" alt="Ooty hills">
+                        <img src="/assets/wp2783229.jpg" alt="Ooty lake">
+                        <img src="/assets/adbc9d_5f9f1beb25274cd4bedb07a538223497~mv2.avif" alt="Ooty garden">
+                        </div>
+                        <h3>Ooty</h3>
+                        <p>Explore the green mountains.</p>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="trip-card">
+                        <div class="slider">
+                        <img src="/assets/kerala-backwater-alleppey.jpg" alt="Kerala backwaters">
+                        <img src="/assets/OIP.jpg" alt="Kerala greenery">
+                        <img src="/assets/luxury-on-boat-4-days-kerala-tour.jpg" alt="Kerala houseboat">
+                        </div>
+                        <h3>Kerala</h3>
+                        <p>Discover nature and backwaters.</p>
+                    </div>
+
+
+                    </div>
+                    </section>
+
+
+                    <section>
+
+                        <h2 style="background-color: rgb(6, 6, 68); color: white;">About Us</h2>
+                        <p>We are a team of travel enthusiasts dedicated to providing you with the best travel experiences.</p>
+                        <div class="trip-container">
+                        <div class="trip-card">
+                        <div class="slider">
+
+                                <img src="/assets/student1.jpg" alt="Team Member 1">
+                                 </div>
+                                <h3>Sajithra K</h3>
+                                <p>Travel enthusiast</p>
+
+                        </div>
+
+                        <div class="trip-card">
+                        <div class="slider">
+
+                                <img src="/assets/student2.jpg" alt="Team Member 2">
+                                 </div>
+                                <h3>John Doe</h3>
+                                <p>Assistant Manager</p>
+
+
+                    </div>
+                        <div class="trip-card">
+                        <div class="slider">
+
+                                <img src="/assets/student3.jpg"alt="Team Member 3">
+                                 </div>
+                                <h3> Jane Smith</h3>
+                                <p>Marketing Specialist</p>
+                           </div>
+
+                    </div>
+                    </section>
+
+
+                    <section>
+                        <h2 style="background-color: rgb(6, 6, 68); color: white;">Contact Us</h2>
+                        <p>Have questions? Reach out to us!</p>
+                        <p>sajithra1700@gmail.com</p>
+                        </div>
+                        </div>
+                        </div>
+                    </section>
+
+
+                    <section>
+                        <h2 style="background-color: rgb(6, 6, 68); color: white;">Contact Us</h2>
+                        <p>Have questions? Reach out to us!</p>
+                        <p>sajithra1700@gmail.com</p>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2026 lets trip. All rights reserved.</p>
+                </footer>
+ <h1>Task8: Create a page with article and sidebar</h1>
+
+                    <h2>My Blog</h2>
+
+                <main>
+                    <article>
+                        <h2>My First Blog Post about Shopping</h2>
+                        <p>Shopping is a great way to find unique items and support local businesses.</p>
+                    </article>
+                    <aside>
+                        <h3>Related Shopping Links</h3>
+                        <ul>
+                            <li><a href="https://www.amazon.com">Amazon</a></li>
+                            <li><a href="https://www.ebay.com">eBay</a></li>
+                            <li><a href="https://www.flipkart.com">Flipkart</a></li>
+                        </ul>
+                    </aside>
+                </main>
+                <footer>
+                    <p>Thanks for reading!</p>
+                </footer>
+
+                <h1>Task9: create news page</h1>
+                <section>
+                    <h2>Latest News</h2>
+                    <article>
+                        <h2>Heavy Rainfall</h2>
+                        <p>Severe rains have battered several parts of the state. Pamban received 11.4 cm of rain, Coimbatore recorded 8 cm (causing water to enter hundreds of homes in the city), and regions like the Nilgiris, Palani, and Vedasandur saw heavy downpours</p>
+                    </article>
+                    <article>
+                        <h2>School Holidays</h2>
+                        <p>holidays for schools in heavily affected areas, including Ooty, Coonoor, Gudalur, and Kundah taluks in the Nilgiris district, as well as parts of Coimbatore and Dindigul districts.</p>
+                    </article>
+                    <footer>
+                        <p>End of News Section</p>
+                    </footer>
+                </section>
+
+                <h1>Task10: company contact webpage</h1>
+                <section>
+                     <nav>
+                        <ul class="vsecure-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="logo"><img src="/assets/Secure Health Insurance Logo.png" alt="Vsecure"></h1>
+
+                    <main>
+                     <p style="text-align: justify;">About VSecure Health Insurance At **VSecure Health Insurance**, we believe that good health is the foundation of a happy and secure life. Our goal is to help individuals and families protect their health and prepare for unexpected medical expenses through reliable health insurance solutions. We are committed to making healthcare protection easier to understand, accessible, and convenient for everyone. With a customer-focused approach, we aim to provide clear information, transparent service, and support throughout the insurance journey, from choosing a suitable plan to understanding policy benefits and claims procedures. At VSecure, your health, peace of mind, and financial security are at the heart of everything we do. We strive to build lasting relationships based on trust, care, and confidence, helping you and your loved ones move toward a healthier and more secure future.</p>
+
+                    </main>
+                    <address>
+                        <h1>Contact</h1>
+                        <p>email: sajithra1700@gmail.com</p>
+                        <p>ph:0000000000</p>
+                        <p>address:Idigarai, coimbatore , 641110</p>
+
+                    </address>
+                    <footer><p>&copy;
+                      2026 Vsecure. All Rights Reserved.</p>
+                    </footer>
+                </section>
+
+            <h1>Task11:Html entities</h1>
+            <table border="2px">
+                <tr>
+                  <th>entities</th>
+                  <th>description</th>
+                </tr>
+                <tr>
+                    <td>&copy;</td>
+                    <td>&copy 2026 Vsecure. All Rights Reserved.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>non breaking space"hello&nbsp;world</td>
+                </tr>
+                <tr>
+                    <td>&reg;</td>
+                    <td>Registered trademark"&reg;company vsecure"</td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>less than"10 is &lt;50"</td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>"100 is &gt;50"</td>
+                </tr>
+            </table>
+
+
+
+</body>
+</html>
